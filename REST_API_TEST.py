@@ -26,7 +26,7 @@ users = [
 class User(Resource):
     def get(self, name):
         for user in users:
-            if(name == user["name"]):
+            if name == user["name"]:
                 return user, 200
         return "User Not FOUND", 404
 
@@ -54,7 +54,7 @@ class User(Resource):
         args = parser.parse_args()
 
         for user in users:
-            if (name == user["name"]):
+            if name == user["name"]:
                 user["age"] = args["age"]
                 user["occupation"] = args["occupation"]
                 return user, 200
@@ -73,4 +73,6 @@ class User(Resource):
 
 
 api.add_resource(User, "/user/<string:name>")
+
+
 app.run(debug=True)
