@@ -22,8 +22,8 @@ users = [
     }
 ]
 
-class User(Resource):
 
+class User(Resource):
     def get(self, name):
         for user in users:
             if(name == user["name"]):
@@ -72,7 +72,5 @@ class User(Resource):
         return "{} is deleted.".format(name), 200
 
 
-
 api.add_resource(User, "/user/<string:name>")
-
 app.run(debug=True)
