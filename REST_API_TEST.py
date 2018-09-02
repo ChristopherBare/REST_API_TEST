@@ -24,6 +24,11 @@ users = [
 
 
 class User(Resource):
+    # this does nothing I think.
+    def get(self):
+        for user in users:
+            return user, 200
+
     def get(self, name):
         for user in users:
             if name == user["name"]:
