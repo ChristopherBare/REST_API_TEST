@@ -9,20 +9,77 @@ api = Api(app)
 
 users = [
     {
-    "name": "Christopher Bare",
-    "age": 24,
-    "occupation": "It's Complicated."
-    },
-    {
-    "name": "Doodle Bob",
-    "age": 37,
-    "occupation": "It's different."
-    },
-    {
-    "name": "Dingle B00b",
-    "age": 38,
-    "occupation": "It's exaggerated."
-    }
+        "id": 0,
+        "name": "Casey Bean",
+        "company": "HAWKSTER",
+        "age": 192
+      },
+      {
+        "id": 1,
+        "name": "Kristy Herring",
+        "company": "ECSTASIA",
+        "age": 160
+      },
+      {
+        "id": 2,
+        "name": "Gwendolyn Park",
+        "company": "TROPOLIS",
+        "age": 217
+      },
+      {
+        "id": 3,
+        "name": "Ballard Schneider",
+        "company": "QUADEEBO",
+        "age": 120
+      },
+      {
+        "id": 4,
+        "name": "Bonita Mcclure",
+        "company": "KONNECT",
+        "age": 85
+      },
+      {
+        "id": 5,
+        "name": "Melendez Trujillo",
+        "company": "MANGELICA",
+        "age": 311
+      },
+      {
+        "id": 6,
+        "name": "Long Osborn",
+        "company": "SCHOOLIO",
+        "age": 372
+      },
+      {
+        "id": 7,
+        "name": "Lorrie Rowe",
+        "company": "ZAGGLES",
+        "age": 360
+      },
+      {
+        "id": 8,
+        "name": "Levine Warren",
+        "company": "OTHERWAY",
+        "age": 310
+      },
+      {
+        "id": 9,
+        "name": "Christopher Bare",
+        "age": 24,
+        "company": "It's Complicated."
+      },
+      {
+        "id": 10,
+        "name": "Doodle Bob",
+        "age": 37,
+        "company": "It's different."
+      },
+      {
+        "id": 11,
+        "name": "Dingle B00b",
+        "age": 38,
+        "company": "It's exaggerated."
+      }
 ]
 
 
