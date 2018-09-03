@@ -1,5 +1,8 @@
 from flask import Flask
 from flask_restful import Api, Resource, reqparse
+from flask import Flask, request
+
+
 
 app = Flask(__name__)
 api = Api(app)
@@ -22,6 +25,10 @@ users = [
     }
 ]
 
+
+class Users(Resource):
+    def get(self):
+        return users
 
 class User(Resource):
     def get(self, name):
@@ -73,6 +80,7 @@ class User(Resource):
 
 
 api.add_resource(User, "/user/<string:name>")
+api.add_resource(Users, "/users")
 
 
 app.run(debug=True)
